@@ -1,0 +1,17 @@
+name: "flake8"
+description: "Run flake8."
+inputs:
+  options:
+    description: "Options passed to flake8. Use `flake8 --help` to print available."
+    required: false
+    default: "--format pylint"
+  src:
+    description: "File or directory to run flake8 on."
+    required: false
+    default: "."
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.options }}
+    - ${{ inputs.src }}
