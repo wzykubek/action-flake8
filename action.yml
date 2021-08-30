@@ -1,5 +1,5 @@
-name: "flake8"
-description: "Run flake8."
+name: "flake8 (plugins support)"
+description: "Run flake8 with optional plugins."
 inputs:
   options:
     description: "Options passed to flake8. Use `flake8 --help` to print available."
@@ -21,3 +21,6 @@ runs:
     - ${{ inputs.plugins }}
   pre-entrypoint: "/setup.sh"
   entrypoint: "/run.sh"
+branding:
+  icon: "check"
+  color: "gray-dark"
