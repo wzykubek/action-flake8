@@ -9,9 +9,14 @@ inputs:
     description: "File or directory to run flake8 on."
     required: false
     default: "."
+  plugins:
+    description: "List of flake8 plugin to use."
+    required: false
 runs:
   using: "docker"
   image: "Dockerfile"
   args:
     - ${{ inputs.options }}
     - ${{ inputs.src }}
+    - ${{ inputs.plugins }}
+  pre-entrypoint: "setup.sh"
