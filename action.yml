@@ -19,4 +19,4 @@ runs:
     - ${{ inputs.options }}
     - ${{ inputs.src }}
     - ${{ inputs.plugins }}
-  pre-entrypoint: "setup.sh"
+  pre-entrypoint: "/setup.sh"
