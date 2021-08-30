@@ -1,4 +1,4 @@
 #!/bin/sh -l
 
-python -m venv venv
-./venv/bin/pip install flake8 $3
+python -m venv $HOME/venv
+$HOME/venv/bin/pip install flake8 $3
