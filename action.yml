@@ -10,7 +10,7 @@ inputs:
     required: false
     default: "."
   plugins:
-    description: "List of flake8 plugin to use."
+    description: "List of flake8 plugins to use."
     required: false
 runs:
   using: "docker"
