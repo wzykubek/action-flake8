@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-flake8 ${1} "${2}"
+./venv/bin/flake8 ${1} "${2}"
