@@ -20,3 +20,4 @@ runs:
     - ${{ inputs.src }}
     - ${{ inputs.plugins }}
   pre-entrypoint: "/setup.sh"
+  entrypoint: "/run.sh"
