@@ -7,3 +7,6 @@ install() {
 run() {
     python -m flake8 ${1} "${2}"
 }
+
+install
+run "${@}"
